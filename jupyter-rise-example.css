@@ -1,0 +1,15 @@
+.reveal {
+  background-color: #222;
+}
+
+.fa {
+  color: white;
+}
+
+.reveal .slides .code_cell {
+  background-color: #DDD;
+}
+
+.reveal p {
+  color: #EEE;
+}
