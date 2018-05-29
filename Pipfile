@@ -7,11 +7,11 @@ url = "https://pypi.org/simple"
 python_version = "3.6"
 
 [scripts]
-post-install = "bash -c 'jupyter-nbextension install rise --py --sys-prefix && jupyter-nbextension enable rise --py --sys-prefix && jupyter nbextensions_configurator enable --sys-prefix'"
+enable-rise = "bash -c 'jupyter-nbextension install rise --py --sys-prefix && jupyter-nbextension enable rise --py --sys-prefix'"
+disable-rise = "bash -c 'jupyter-nbextension disable rise --py --sys-prefix && jupyter-nbextension uninstall rise --py --sys-prefix'"
 
 [packages]
 jupyter = ">=1.0.0"
 rise = ">=5.2.0"
-jupyter-nbextensions-configurator = ">=0.4.0"
 
 [dev-packages]
