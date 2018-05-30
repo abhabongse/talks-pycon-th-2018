@@ -4,6 +4,10 @@
 .rise-enabled .reveal .output_area pre {
   color: #EEE !important;
 }
+.rise-enabled .reveal .text_cell_render .hl {
+  color: #FFD;
+  text-shadow: 0 0 24px #CC9;
+}
 
 /* Opt for dark background slides */
 .rise-enabled .reveal {
