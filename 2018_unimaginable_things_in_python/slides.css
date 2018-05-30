@@ -67,7 +67,7 @@
  * Copied and adapted from Atom One Dark Theme located at
  * https://github.com/Aerobird98/codemirror-one-dark-theme
  ***********************************************************/
-.rise-enabled .reveal code.cm-s-ipython,
+.rise-enabled .reveal .text_cell_render code,
 .rise-enabled .reveal .CodeMirror,
 .rise-enabled .reveal .cm-s-ipython.CodeMirror {
   background: #272825;
