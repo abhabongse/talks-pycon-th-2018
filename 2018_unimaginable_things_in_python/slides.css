@@ -8,6 +8,10 @@
   color: #FFD;
   text-shadow: 0 0 24px #CC9;
 }
+.rise-enabled .reveal .text_cell_render .cry {
+  color: #EBB;
+  text-shadow: 0 0 24px #B77;
+}
 
 /* Opt for dark background slides */
 .rise-enabled .reveal {

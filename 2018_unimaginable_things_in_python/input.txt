@@ -1,0 +1,5 @@
+Hello, how are you?
+I'm fine thank you. And you?
+...
+Ellipsis?
+Yes! It's a valid expression.
