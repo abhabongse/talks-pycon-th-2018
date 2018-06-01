@@ -1,14 +1,14 @@
 /* Default font color for entire RISE presentation */
 .rise-enabled,
-.rise-enabled .reveal .text_cell_render,
+.rise-enabled .reveal .rendered_html,
 .rise-enabled .reveal .output_area pre {
   color: #EEE !important;
 }
-.rise-enabled .reveal .text_cell_render .hl {
+.rise-enabled .reveal .rendered_html .hl {
   color: #FFD;
   text-shadow: 0 0 24px #CC9;
 }
-.rise-enabled .reveal .text_cell_render .cry {
+.rise-enabled .reveal .rendered_html .cry {
   color: #EBB;
   text-shadow: 0 0 24px #B77;
 }
@@ -41,7 +41,7 @@
 }
 
 /* Reset code inside text cell to default width and color */
-.rise-enabled .reveal .text_cell_render pre {
+.rise-enabled .reveal .rendered_html pre {
   background-color: transparent;
   width: auto;
 }
@@ -71,11 +71,40 @@
   padding: 0.4em;
 }
 
+/* Decrease margins for non-heading items. */
+.rise-enabled .reveal .rendered_html * + h1,
+.rise-enabled .reveal .rendered_html * + h2,
+.rise-enabled .reveal .rendered_html * + h3,
+.rise-enabled .reveal .rendered_html * + h4,
+.rise-enabled .reveal .rendered_html * + h5,
+.rise-enabled .reveal .rendered_html * + h6,
+.rise-enabled .reveal .rendered_html * + div,
+.rise-enabled .reveal .rendered_html * + ul,
+.rise-enabled .reveal .rendered_html * + ol,
+.rise-enabled .reveal .rendered_html * + dl
+.rise-enabled .reveal .rendered_html * + p {
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+.rise-enabled .reveal .rendered_html h1:first-child,
+.rise-enabled .reveal .rendered_html h2:first-child,
+.rise-enabled .reveal .rendered_html h3:first-child,
+.rise-enabled .reveal .rendered_html h4:first-child,
+.rise-enabled .reveal .rendered_html h5:first-child,
+.rise-enabled .reveal .rendered_html h6:first-child,
+.rise-enabled .reveal .rendered_html div:first-child,
+.rise-enabled .reveal .rendered_html p:first-child,
+.rise-enabled .reveal .rendered_html ul:first-child,
+.rise-enabled .reveal .rendered_html ol:first-child,
+.rise-enabled .reveal .rendered_html dl:first-child {
+  margin-bottom: 0.75em;
+}
+
 /***********************************************************
  * Copied and adapted from Atom One Dark Theme located at
  * https://github.com/Aerobird98/codemirror-one-dark-theme
  ***********************************************************/
-.rise-enabled .reveal .text_cell_render code,
+.rise-enabled .reveal .rendered_html code,
 .rise-enabled .reveal .CodeMirror,
 .rise-enabled .reveal .cm-s-ipython.CodeMirror {
   background: #272825;
