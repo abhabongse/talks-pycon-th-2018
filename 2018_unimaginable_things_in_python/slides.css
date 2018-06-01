@@ -8,6 +8,10 @@
   color: #FFD;
   text-shadow: 0 0 24px #CC9;
 }
+.rise-enabled .reveal .rendered_html .joy {
+  color: #BEB;
+  text-shadow: 0 0 24px #7B7;
+}
 .rise-enabled .reveal .rendered_html .cry {
   color: #EBB;
   text-shadow: 0 0 24px #B77;
@@ -71,6 +75,16 @@
   padding: 0.4em;
 }
 
+/* Undo uppercase headings */
+.rise-enabled .reveal .rendered_html h1,
+.rise-enabled .reveal .rendered_html h2,
+.rise-enabled .reveal .rendered_html h3,
+.rise-enabled .reveal .rendered_html h4,
+.rise-enabled .reveal .rendered_html h5,
+.rise-enabled .reveal .rendered_html h6 {
+  text-transform: none;
+}
+
 /* Decrease margins for non-heading items. */
 .rise-enabled .reveal .rendered_html * + h1,
 .rise-enabled .reveal .rendered_html * + h2,
@@ -83,21 +97,15 @@
 .rise-enabled .reveal .rendered_html * + ol,
 .rise-enabled .reveal .rendered_html * + dl
 .rise-enabled .reveal .rendered_html * + p {
-  margin-bottom: 6px;
-  margin-top: 6px;
+  margin-top: 12px;
 }
 .rise-enabled .reveal .rendered_html h1:first-child,
 .rise-enabled .reveal .rendered_html h2:first-child,
 .rise-enabled .reveal .rendered_html h3:first-child,
 .rise-enabled .reveal .rendered_html h4:first-child,
 .rise-enabled .reveal .rendered_html h5:first-child,
-.rise-enabled .reveal .rendered_html h6:first-child,
-.rise-enabled .reveal .rendered_html div:first-child,
-.rise-enabled .reveal .rendered_html p:first-child,
-.rise-enabled .reveal .rendered_html ul:first-child,
-.rise-enabled .reveal .rendered_html ol:first-child,
-.rise-enabled .reveal .rendered_html dl:first-child {
-  margin-bottom: 0.75em;
+.rise-enabled .reveal .rendered_html h6:first-child {
+  margin-bottom: 0.6em;
 }
 
 /***********************************************************
@@ -171,6 +179,7 @@
 .rise-enabled .reveal .cm-number { color: #d19a66; }
 .rise-enabled .reveal .cm-property { color: #56b6c2; }
 .rise-enabled .reveal .cm-qualifier { color: #d19a66; }
+.rise-enabled .reveal .cm-builtin { color: #758ce0; }
 .rise-enabled .reveal .cm-variable { color: #e06c75; }
 .rise-enabled .reveal .cm-variable-2 { color: #4cc055; }
 .rise-enabled .reveal .cm-string { color: #98c379; }
