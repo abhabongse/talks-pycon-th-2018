@@ -28,24 +28,24 @@
 .rise-enabled .reveal .rendered_html *,
 .rise-enabled .reveal .output_area * {
   color: #EEE;
-  text-shadow: 1.5px 1.5px 6px black;
+  text-shadow: 1px 2px 4px hsla(0, 0%, 0%, 0.8);
 }
 
 /* Glowing-colored text for emphasization */
 .rise-enabled .reveal .rendered_html .hl,
 .rise-enabled .reveal .rendered_html .hl * {
   color: #FFC;
-  text-shadow: 0.25px 0.25px 4px #CC8;
+  text-shadow: 1px 2px 4px hsla(0, 0%, 0%, 0.8), 0.25px 0.25px 6px #CC8;
 }
 .rise-enabled .reveal .rendered_html .joy,
 .rise-enabled .reveal .rendered_html .joy * {
   color: #AEA;
-  text-shadow: 0.25px 0.25px 4px #6B6;
+  text-shadow: 1px 2px 4px hsla(0, 0%, 0%, 0.8), 0.25px 0.25px 6px #6B6;
 }
 .rise-enabled .reveal .rendered_html .cry,
 .rise-enabled .reveal .rendered_html .cry * {
   color: #EAA;
-  text-shadow: 0.25px 0.25px 4px #B66;
+  text-shadow: 1px 2px 4px hsla(0, 0%, 0%, 0.8), 0.25px 0.25px 6px #B66;
 }
 
 /* Glowing-colored selected cell borders */
