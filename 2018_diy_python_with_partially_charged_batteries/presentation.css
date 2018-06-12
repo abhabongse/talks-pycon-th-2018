@@ -1,0 +1,323 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,900,900i|Source+Sans+Pro:400,400i,700,700i&subset=latin-ext');
+
+/* Choose dark background slides */
+.rise-enabled .reveal {
+  background-color: #171812;
+}
+
+/* Make default font size twice as big in RISE presentation mode */
+.rise-enabled .reveal .text_cell,
+.rise-enabled .reveal .code_cell {
+  font-family: 'Roboto', sans-serif;
+  font-size: 200%;
+}
+.rise-enabled .reveal small {
+  font-size: 75%;
+}
+
+/* Configure slide number on lower-right corner */
+.rise-enabled .reveal .slide-number {
+  color: white;
+}
+
+/* Default font color for entire RISE presentation */
+.rise-enabled,
+.rise-enabled .reveal .rendered_html,
+.rise-enabled .reveal .output_area,
+.rise-enabled .reveal .rendered_html *,
+.rise-enabled .reveal .output_area * {
+  color: #EEE;
+  text-shadow: 1px 2px 4px hsla(0, 0%, 0%, 0.8);
+}
+
+/* Glowing-colored text for emphasization */
+.rise-enabled .reveal .rendered_html .hl,
+.rise-enabled .reveal .rendered_html .hl * {
+  color: #FFC;
+  text-shadow: 1px 2px 4px hsla(0, 0%, 0%, 0.8), 0.25px 0.25px 6px #CC8;
+}
+.rise-enabled .reveal .rendered_html .joy,
+.rise-enabled .reveal .rendered_html .joy * {
+  color: #AEA;
+  text-shadow: 1px 2px 4px hsla(0, 0%, 0%, 0.8), 0.25px 0.25px 6px #6B6;
+}
+.rise-enabled .reveal .rendered_html .cry,
+.rise-enabled .reveal .rendered_html .cry * {
+  color: #EAA;
+  text-shadow: 1px 2px 4px hsla(0, 0%, 0%, 0.8), 0.25px 0.25px 6px #B66;
+}
+
+/* Glowing-colored selected cell borders */
+.rise-enabled .reveal .selected {
+  border-color: #9ecaed;
+  border-width: 1px;
+  box-shadow: 0 0 8px #9ecaed, inset 0 0 8px #9ecaed;
+}
+
+/* Adjusting code cell with border glowing */
+.rise-enabled .reveal .code_cell {
+  padding-bottom: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+}
+
+/* Reset code inside text cell to default width and color */
+.rise-enabled .reveal .rendered_html pre {
+  background-color: transparent;
+  width: auto;
+}
+.rise-enabled .reveal .input_area {
+  background-color: transparent;
+}
+
+/* Other markups in rendered HTML cell */
+.rise-enabled .reveal .rendered_html strong {
+  font-weight: 900;
+}
+
+/* Code cell input prompt color */
+.rise-enabled .reveal .input_prompt {
+  color: #999;
+}
+
+/* Set code cell border color to some dark color */
+.rise-enabled .reveal .cm-s-ipython .CodeMirror-sizer,
+.rise-enabled .reveal .cm-s-ipython .CodeMirror-sizer > div,
+.rise-enabled .reveal .cm-s-ipython .CodeMirror-lines,
+.rise-enabled .reveal .CodeMirror .CodeMirror-sizer,
+.rise-enabled .reveal .CodeMirror .CodeMirror-sizer > div,
+.rise-enabled .reveal .CodeMirror .CodeMirror-lines,
+.rise-enabled .reveal code.cm-s-ipython,
+.rise-enabled .reveal .input_area {
+  border-color: #111;
+}
+
+/* Markdown code block mimicks the actual code cell padding */
+.rise-enabled .reveal code.cm-s-ipython {
+  padding: 0.4em;
+}
+
+/* Undo uppercase headings */
+.rise-enabled .reveal .rendered_html h1,
+.rise-enabled .reveal .rendered_html h2,
+.rise-enabled .reveal .rendered_html h3,
+.rise-enabled .reveal .rendered_html h4,
+.rise-enabled .reveal .rendered_html h5,
+.rise-enabled .reveal .rendered_html h6 {
+  text-transform: none;
+}
+
+/* Decrease margins for non-first items. */
+.rise-enabled .reveal .rendered_html * + :empty {
+  margin-top: 0.2em;
+}
+.rise-enabled .reveal .rendered_html h1:first-child,
+.rise-enabled .reveal .rendered_html h2:first-child,
+.rise-enabled .reveal .rendered_html h3:first-child,
+.rise-enabled .reveal .rendered_html h4:first-child,
+.rise-enabled .reveal .rendered_html h5:first-child,
+.rise-enabled .reveal .rendered_html h6:first-child {
+  margin-bottom: 0.6em;
+}
+
+/***********************************************************
+ * Copied and adapted from Atom One Dark Theme located at
+ * https://github.com/Aerobird98/codemirror-one-dark-theme
+ ***********************************************************/
+.rise-enabled .reveal .rendered_html code,
+.rise-enabled .reveal .CodeMirror,
+.rise-enabled .reveal .cm-s-ipython.CodeMirror {
+  background: #272825;
+  color: #f8f8f2;
+}
+.rise-enabled .reveal .CodeMirror-selected {
+  background-color: #3e4451;
+}
+.rise-enabled .reveal .CodeMirror-gutter,
+.rise-enabled .reveal .CodeMirror-gutters {
+  border: none;
+  background-color: #282c34;
+}
+.rise-enabled .reveal .CodeMirror-linenumber,
+.rise-enabled .reveal .CodeMirror-linenumbers {
+  color: #5c6370 !important;
+  background-color: transparent;
+}
+.rise-enabled .reveal .CodeMirror-lines {
+  color: #abb2bf !important;
+  background-color: transparent;
+}
+.rise-enabled .reveal .CodeMirror-cursor {
+  border-left: 2px solid #56b6c2 !important;
+}
+.rise-enabled .reveal .CodeMirror-matchingbracket,
+.rise-enabled .reveal .CodeMirror-matchingtag {
+  border-bottom: 2px solid #56b6c2;
+  color: #abb2bf !important;
+  background-color: transparent;
+}
+.rise-enabled .reveal .CodeMirror-nonmatchingbracket {
+  border-bottom: 2px solid #e06c75;
+  color: #abb2bf !important;
+  background-color: transparent;
+}
+.rise-enabled .reveal .CodeMirror-foldmarker,
+.rise-enabled .reveal .CodeMirror-foldgutter,
+.rise-enabled .reveal .CodeMirror-foldgutter-open,
+.rise-enabled .reveal .CodeMirror-foldgutter-folded {
+  border: none;
+  text-shadow: none;
+  color: #5c6370 !important;
+  background-color: transparent;
+}
+.rise-enabled .reveal .CodeMirror-activeline-background {
+  background-color: rgba(153, 187, 255, 0.04);
+}
+.rise-enabled .reveal .cm-header { color: #e06c75; }
+.rise-enabled .reveal .cm-quote { color: #5c6370; font-style: italic; }
+.rise-enabled .reveal .cm-negative { color: #e06c75; }
+.rise-enabled .reveal .cm-positive { color: #e06c75; }
+.rise-enabled .reveal .cm-strong { color: #d19a66; font-weight: bold; }
+.rise-enabled .reveal .cm-header .cm-strong { color: #d19a66; font-weight: bold; }
+.rise-enabled .reveal .cm-em { color: #c678dd; font-style: italic;}
+.rise-enabled .reveal .cm-header .cm-em { color: #c678dd; font-style: italic; }
+.rise-enabled .reveal .cm-tag { color: #e06c75; }
+.rise-enabled .reveal .cm-attribute { color: #d19a66; }
+.rise-enabled .reveal .cm-link { color: #98c379; border-bottom: solid 1px #98c379; }
+.rise-enabled .reveal .cm-builtin { color: #e06c75; }
+.rise-enabled .reveal .cm-keyword { color: #c678dd; }
+.rise-enabled .reveal .cm-def { color: #e5c07b; }
+.rise-enabled .reveal .cm-atom { color: #d19a66; }
+.rise-enabled .reveal .cm-number { color: #d19a66; }
+.rise-enabled .reveal .cm-property { color: #56b6c2; }
+.rise-enabled .reveal .cm-qualifier { color: #d19a66; }
+.rise-enabled .reveal .cm-builtin { color: #859cd0; }
+.rise-enabled .reveal .cm-variable { color: #e06c75; }
+.rise-enabled .reveal .cm-variable-2 { color: #4cc055; }
+.rise-enabled .reveal .cm-string { color: #98c379; }
+.rise-enabled .reveal .cm-punctuation { color: #abb2bf; }
+.rise-enabled .reveal .cm-operator { color: #56b6c2; }
+.rise-enabled .reveal .cm-meta { color: #abb2bf; }
+.rise-enabled .reveal .cm-bracket { color: #abb2bf; }
+.rise-enabled .reveal .cm-comment { color: #6c7380; font-style: italic; }
+.rise-enabled .reveal .cm-error { color: #e06c75; }
+.rise-enabled .reveal .cm-m-css.cm-variable { color: #828997; }
+.rise-enabled .reveal .cm-m-css.cm-property { color: #abb2bf; }
+.rise-enabled .reveal .cm-m-css.cm-atom { color: #56b6c2; }
+.rise-enabled .reveal .cm-m-css.cm-builtin { color: #56b6c2; }
+.rise-enabled .reveal .cm-m-lua.cm-variable { color: #56b6c2; }
+
+/* Re-enable colors for stacktrace error messages */
+/* CSS font colors for translated ANSI escape sequences */
+/* The color values are a mix of
+   http://www.xcolors.net/dl/baskerville-ivorylight and
+   http://www.xcolors.net/dl/euphrasia */
+.rise-enabled .reveal .ansi-black-fg {
+  color: #3E424D;
+}
+.rise-enabled .reveal .ansi-black-bg {
+  background-color: #3E424D;
+}
+.rise-enabled .reveal .ansi-black-intense-fg {
+  color: #282C36;
+}
+.rise-enabled .reveal .ansi-black-intense-bg {
+  background-color: #282C36;
+}
+.rise-enabled .reveal .ansi-red-fg {
+  color: #E75C58;
+}
+.rise-enabled .reveal .ansi-red-bg {
+  background-color: #E75C58;
+}
+.rise-enabled .reveal .ansi-red-intense-fg {
+  color: #B22B31;
+}
+.rise-enabled .reveal .ansi-red-intense-bg {
+  background-color: #B22B31;
+}
+.rise-enabled .reveal .ansi-green-fg {
+  color: #00A250;
+}
+.rise-enabled .reveal .ansi-green-bg {
+  background-color: #00A250;
+}
+.rise-enabled .reveal .ansi-green-intense-fg {
+  color: #007427;
+}
+.rise-enabled .reveal .ansi-green-intense-bg {
+  background-color: #007427;
+}
+.rise-enabled .reveal .ansi-yellow-fg {
+  color: #DDB62B;
+}
+.rise-enabled .reveal .ansi-yellow-bg {
+  background-color: #DDB62B;
+}
+.rise-enabled .reveal .ansi-yellow-intense-fg {
+  color: #B27D12;
+}
+.rise-enabled .reveal .ansi-yellow-intense-bg {
+  background-color: #B27D12;
+}
+.rise-enabled .reveal .ansi-blue-fg {
+  color: #208FFB;
+}
+.rise-enabled .reveal .ansi-blue-bg {
+  background-color: #208FFB;
+}
+.rise-enabled .reveal .ansi-blue-intense-fg {
+  color: #0065CA;
+}
+.rise-enabled .reveal .ansi-blue-intense-bg {
+  background-color: #0065CA;
+}
+.rise-enabled .reveal .ansi-magenta-fg {
+  color: #D160C4;
+}
+.rise-enabled .reveal .ansi-magenta-bg {
+  background-color: #D160C4;
+}
+.rise-enabled .reveal .ansi-magenta-intense-fg {
+  color: #A03196;
+}
+.rise-enabled .reveal .ansi-magenta-intense-bg {
+  background-color: #A03196;
+}
+.rise-enabled .reveal .ansi-cyan-fg {
+  color: #60C6C8;
+}
+.rise-enabled .reveal .ansi-cyan-bg {
+  background-color: #60C6C8;
+}
+.rise-enabled .reveal .ansi-cyan-intense-fg {
+  color: #258F8F;
+}
+.rise-enabled .reveal .ansi-cyan-intense-bg {
+  background-color: #258F8F;
+}
+.rise-enabled .reveal .ansi-white-fg {
+  color: #C5C1B4;
+}
+.rise-enabled .reveal .ansi-white-bg {
+  background-color: #C5C1B4;
+}
+.rise-enabled .reveal .ansi-white-intense-fg {
+  color: #A1A6B2;
+}
+.rise-enabled .reveal .ansi-white-intense-bg {
+  background-color: #A1A6B2;
+}
+.rise-enabled .reveal .ansi-default-inverse-fg {
+  color: #FFFFFF;
+}
+.rise-enabled .reveal .ansi-default-inverse-bg {
+  background-color: #000000;
+}
+.rise-enabled .reveal .ansi-bold {
+  font-weight: bold;
+}
+.rise-enabled .reveal .ansi-underline {
+  text-decoration: underline;
+}
