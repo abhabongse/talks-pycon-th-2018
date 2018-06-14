@@ -58,6 +58,15 @@
   text-align: center;
 }
 
+/* Stylized texts */
+.rise-enabled .reveal .rendered_html .text-120 {
+  font-size: 120px;
+}
+.rise-enabled .reveal .rendered_html .smcp {
+  font-variant: small-caps;
+  letter-spacing: 0.15em;
+}
+
 
 /* Glowing-colored selected cell borders */
 .rise-enabled .reveal .selected {
