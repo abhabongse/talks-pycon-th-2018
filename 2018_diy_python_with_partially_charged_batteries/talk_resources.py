@@ -31,8 +31,10 @@ class YouTubeVideo(object):
             options.append("showinfo=0")
         opt_string = "&amp;".join(options)
         return f"""
-            <iframe width="960" height="540"
-                src="https://www.youtube.com/embed/{self.video_id}?{opt_string}"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-            </iframe>
+<div class="center">
+    <iframe width="960" height="540"
+        src="https://www.youtube.com/embed/{self.video_id}?{opt_string}"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
+<div>
         """
