@@ -18,7 +18,11 @@
 
 /* Configure slide number on lower-right corner */
 .rise-enabled .reveal .slide-number {
-  color: white;
+  top: 24px;
+  bottom: auto;
+  color: #CCC;
+  font-size: 300%
+  right: 0;
 }
 
 /* Default font color for entire RISE presentation */
