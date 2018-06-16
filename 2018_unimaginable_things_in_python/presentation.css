@@ -59,6 +59,16 @@
   text-align: center;
 }
 
+
+.rise-enabled .reveal .rendered_html blockquote {
+  margin: 0;
+}
+
+.rise-enabled .reveal .rendered_html blockquote p {
+  margin: 20px;
+  font-size: 40%;
+}
+
 /* Stylized texts */
 .rise-enabled .reveal .rendered_html .text-120 {
   font-size: 120px;
