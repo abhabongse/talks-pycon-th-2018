@@ -1,6 +1,6 @@
-# Talks in PyCon Thailand since 2018
+# Talks in PyCon Thailand 2018
 
-A collection of talks given at PyCon Thailand since 2018.
+A collection of talks given at PyCon Thailand 2018.
 
 ## Environment Setup
 
