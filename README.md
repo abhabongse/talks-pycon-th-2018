@@ -4,6 +4,8 @@ A collection of talks given at PyCon Thailand 2018.
 
 ## Environment Setup
 
+From inside a presentation directory,
+
 1. Install packages via [`pipenv`](https://docs.pipenv.org/):
     ```bash
     $ pipenv install
@@ -30,3 +32,4 @@ Assuming that the first three steps from [Environment Setup](#environment-setup)
 1. Create a new notebook.
 2. Show the presentation toolbar by clicking the top-bar menu: `View > Cell Toolbar > Slideshow`.
 3. Go rogue!
+
