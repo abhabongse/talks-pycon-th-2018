@@ -1,6 +1,10 @@
 # Talks in PyCon Thailand 2018
 
-A collection of talks given at PyCon Thailand 2018.
+A collection of some presentations given at PyCon Thailand 2018.
+
+## Issues Welcome
+
+Anyone is welcome to submit issues regarding any errors contained in these presentations. 
 
 ## Environment Setup
 
