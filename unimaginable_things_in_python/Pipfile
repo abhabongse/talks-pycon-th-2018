@@ -4,7 +4,7 @@ name = "pypi"
 url = "https://pypi.org/simple"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
 
 [scripts]
 cleanup = "bash -c 'rm -rf $(find . -type d -name .ropeproject) $(find . -type d -name .ipynb_checkpoints) $(find . -type d -name __pycache__)'"
